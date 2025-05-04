@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Maharana Glass House - Coming Soon</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Orbitron', sans-serif;
+      overflow: hidden;
+    }
+
+    /* Animated Gradient Background */
+    body {
+      background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #1f4037);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .coming-soon-container {
+      text-align: center;
+      color: white;
+    }
+
+    .coming-soon-container h1 {
+      font-size: 3.5rem;
+      margin-bottom: 20px;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+
+    .coming-soon-container h2 {
+      font-size: 1.8rem;
+      color: #ffcc00;
+      margin-bottom: 30px;
+    }
+
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #ffcc00, 0 0 30px #ffcc00;
+      }
+      to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ffaa00, 0 0 40px #ffaa00;
+      }
+    }
+
+    .logo {
+      font-size: 2.2rem;
+      color: #00ffff;
+      margin-bottom: 20px;
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.05); opacity: 0.8; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    .back-button {
+      text-decoration: none;
+      padding: 12px 25px;
+      background-color: #ff4d4d;
+      color: white;
+      border-radius: 30px;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 4px 15px rgba(255, 77, 77, 0.4);
+    }
+
+    .back-button:hover {
+      background-color: #cc0000;
+    }
+
+    @media (max-width: 600px) {
+      .coming-soon-container h1 {
+        font-size: 2rem;
+      }
+      .coming-soon-container h2 {
+        font-size: 1.2rem;
+      }
+      .logo {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="coming-soon-container">
+    <div class="logo">🏛️ Maharana Glass House</div>
+    <h1>We're Under Development</h1>
+    <h2>Coming Soon...</h2>
+    <a href="index.html" class="back-button">← Back to Home</a>
+  </div>
+</body>
+</html>
